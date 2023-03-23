@@ -1,0 +1,8 @@
+[
+  {"id":1,"cardNumber":1002,"address":"сеул","fullName":"Даша Моисеенко","phoneNumber":"380509744567","diagnosis":"простуда"},
+  {"id":2,"cardNumber":3921,"address":"львов красивый город","fullName":"Миша Плохой","phoneNumber":"380993240099","diagnosis":"бронхит"},
+  {"id":3,"cardNumber":845,"address":"адесса адесса жемчужина у моря","fullName":"Лиза Трифонова","phoneNumber":"8931078932","diagnosis":"простуда"},
+  {"id":4,"cardNumber":1661,"address":"на улице","fullName":"Канье Уєст","phoneNumber":"0939481031","diagnosis":"пневмония"},
+  {"id":5,"cardNumber":1747,"address":"Израиль, Тель-Авив","fullName":"Миша Ващук","phoneNumber":"380637592648","diagnosis":"простуда"},
+  {"id":6,"cardNumber":26,"address":"еще львов","fullName":"Сережа","phoneNumber":"1126282253","diagnosis":"бронхит"}
+]

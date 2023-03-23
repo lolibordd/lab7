@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <?import javafx.scene.control.Button?>
+        <?import javafx.scene.control.Label?>
+        <?import javafx.scene.control.TextArea?>
+        <?import javafx.scene.control.TextField?>
+        <?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab7.Controller">
+<children>
+   <Label alignment="CENTER" layoutX="369.0" layoutY="25.0" prefHeight="19.0" prefWidth="149.0" text="Номер медичної карти" />
+   <Label alignment="CENTER" layoutX="285.0" layoutY="25.0" prefHeight="19.0" prefWidth="61.0" text="Телефон" />
+   <Label alignment="CENTER" layoutX="45.0" layoutY="25.0" prefHeight="19.0" prefWidth="41.0" text="ПІБ" textAlignment="CENTER" />
+   <TextField fx:id="FullNameT" layoutX="10.0" layoutY="52.0" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <TextField fx:id="AddressT" layoutX="132.0" layoutY="52.0" prefHeight="28.0" prefWidth="110.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <TextField fx:id="PhoneNumberT" layoutX="259.0" layoutY="52.0" prefHeight="28.0" prefWidth="110.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <TextField fx:id="CardNumberT" layoutX="388.0" layoutY="52.0" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <Button fx:id="AddToListB" layoutX="14.0" layoutY="120.0" mnemonicParsing="false" onAction="#list" prefHeight="27.0" prefWidth="128.0" text="Додати до списку" />
+   <Button fx:id="RemoveB" layoutX="37.0" layoutY="198.0" mnemonicParsing="false" onAction="#remove" prefHeight="27.0" prefWidth="74.0" text="Remove" />
+   <TextField fx:id="RemoveT" layoutX="23.0" layoutY="233.0" prefHeight="27.0" prefWidth="110.0" promptText="id" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <Button fx:id="getPatientsWithCardNumberInRangeB" layoutX="9.0" layoutY="419.0" mnemonicParsing="false" onAction="#getPatientsWithCardNumberInRange" prefHeight="26.0" prefWidth="139.0" text="B. За номером мед. карти" />
+   <TextField fx:id="CardNumber1T" layoutX="27.0" layoutY="451.0" prefHeight="27.0" prefWidth="110.0" promptText="Від номеру" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <Button fx:id="getPatientsWithPhoneNumberStartingWithB" layoutX="19.0" layoutY="545.0" mnemonicParsing="false" onAction="#getPatientsWithPhoneNumberStartingWith" prefHeight="19.0" prefWidth="120.0" text="С. За номером" />
+   <TextField fx:id="PhoneNumberStartsWithT" layoutX="14.0" layoutY="578.0" prefHeight="28.0" prefWidth="128.0" promptText="Починається з цифри" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <Button fx:id="getPatientsWithDiagnosisSortedByCardNumberB" layoutX="19.0" layoutY="297.0" mnemonicParsing="false" onAction="#getPatientsWithDiagnosisSortedByCardNumber" prefHeight="26.0" prefWidth="110.0" text="А. За діагнозом" />
+   <TextField fx:id="DiagnosisTT" layoutX="19.0" layoutY="334.0" prefHeight="27.0" prefWidth="110.0" promptText="Діагноз" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <Button fx:id="countPatientsByDiagnosisB" layoutX="31.0" layoutY="842.0" mnemonicParsing="false" onAction="#countPatientsByDiagnosis" prefHeight="27.0" prefWidth="87.0" text="F. Кількість пацієнтів" />
+   <Button fx:id="getSetOfDiagnosisB" layoutX="29.0" layoutY="756.0" mnemonicParsing="false" onAction="#getSetOfDiagnosis" prefHeight="27.0" prefWidth="87.0" text="E." />
+   <Button fx:id="getDistinctDiagnosesSortedByCountB" layoutX="28.0" layoutY="684.0" mnemonicParsing="false" onAction="#getDistinctDiagnosesSortedByCount" prefHeight="27.0" prefWidth="87.0" text="D." />
+   <TextArea fx:id="AddToListList1" layoutX="147.0" layoutY="103.0" prefHeight="61.0" prefWidth="482.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <TextArea fx:id="RemoveList" layoutX="147.0" layoutY="203.0" prefHeight="61.0" prefWidth="482.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <TextArea fx:id="getPatientsWithDiagnosisSortedByCardNumberList" layoutX="147.0" layoutY="297.0" prefHeight="61.0" prefWidth="482.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <TextArea fx:id="getPatientsWithCardNumberInRangeList" layoutX="147.0" layoutY="419.0" prefHeight="93.0" prefWidth="482.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <TextArea fx:id="getSetOfDiagnosisList" layoutX="140.0" layoutY="748.0" prefHeight="61.0" prefWidth="482.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <TextArea fx:id="countPatientsByDiagnosisList" layoutX="138.0" layoutY="825.0" prefHeight="61.0" prefWidth="482.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <TextArea fx:id="getDistinctDiagnosesSortedByCountList" layoutX="140.0" layoutY="667.0" prefHeight="61.0" prefWidth="482.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <TextArea fx:id="getPatientsWithPhoneNumberStartingWithList" layoutX="147.0" layoutY="545.0" prefHeight="61.0" prefWidth="482.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <Label alignment="CENTER" layoutX="162.0" layoutY="25.0" prefHeight="19.0" prefWidth="50.0" text="Адреса" textAlignment="CENTER" />
+   <TextField fx:id="DiagnosisT" layoutX="518.0" layoutY="52.0" prefHeight="28.0" prefWidth="110.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <Label alignment="CENTER" layoutX="543.0" layoutY="25.0" prefHeight="19.0" prefWidth="61.0" text="Діагноз" />
+   <TextField fx:id="CardNumber2T" layoutX="29.0" layoutY="486.0" prefHeight="28.0" prefWidth="110.0" promptText="До номеру" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <TextArea fx:id="NumberOfPatients" layoutX="581.0" layoutY="615.0" prefHeight="11.0" prefWidth="41.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;" />
+   <Label alignment="CENTER" layoutX="444.0" layoutY="627.0" prefHeight="19.0" prefWidth="128.0" text="Кількість пацієнтів:" textAlignment="CENTER" />
+</children>
+</AnchorPane>
